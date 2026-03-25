@@ -1,16 +1,19 @@
-variable "nat_gateway_id" {
-  description = "nat_gateway_id"
-  type        = string 
-}
 variable "vpc_id" {
-  description = "VPC ID"
-  type        = string
+  type = string
 }
-variable "public_subnets" {
-  description = "public_subnets"
-  type        = string
-}
+
 variable "igw_id" {
-  description = "VPC ID"
-  type        = string
+  type = string
+}
+
+variable "nat_gateway_id" {
+  type = string
+}
+
+variable "public_subnets" {
+  type = list(string)
+}
+
+variable "private_subnets" {
+  type = list(string)
 }
