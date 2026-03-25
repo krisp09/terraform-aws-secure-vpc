@@ -5,6 +5,19 @@ variable "region" {
 variable "project_name" {
   default = "secure-vpc"
 }
+variable "igw_id" {
+  description = "VPC ID"
+  type        = string
+}
+variable "vpc_id" {
+  description = "VPC ID"
+  type        = string
+}
+variable "nat_id" {
+  description = "VPC ID"
+  type        = string
+}
+
 
 variable "vpc_cidr" {
   default = "10.0.0.0/16"
